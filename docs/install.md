@@ -36,10 +36,12 @@ pip install mmsegmentation==0.14.1
 
 **e. Install mmdet3d from source code.**
 ```shell
+pip install scikit_image scipy==1.7.3
 git clone https://github.com/open-mmlab/mmdetection3d.git
 cd mmdetection3d
 git checkout v0.17.1 # Other versions may not be compatible.
-python setup.py install
+# python setup.py install
+pip install -e .
 ```
 
 **f. Install Detectron2 and Timm.**
